@@ -1261,8 +1261,9 @@ footer>p{
     }
 
     #about .container{
-        padding-left: 30px;
-        width: 95%;
+        padding: 20px 30px;
+        width: 100%;
+        border-radius: 0;
     }
 
     .img-wrap{
@@ -1305,6 +1306,24 @@ footer>p{
 
     #contact h2{
         margin-bottom: 10px;
+    }
+
+    .send input{
+        width: 240px;
+        height: 40px;
+        border: none;
+    }
+
+    .bold{
+        font-size: 0.9rem;
+    }
+
+    .adress-child2 p{
+        font-size: 0.8rem;
+    }
+
+    .adress-child2 p:nth-child(2){
+        padding: 2px 0;
     }
 }
 
