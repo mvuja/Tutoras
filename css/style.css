@@ -832,6 +832,9 @@ footer .container .subscribe{
 }
 
 .send{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 20px 0 10px 0;
 }
 
@@ -847,8 +850,7 @@ footer .container .subscribe{
 }
 
 .send button{
-    position: absolute;
-    height: 40.5px;
+    height: 40px;
     width: 40px;
     border: none;
     background-color: var(--secondary-color);
@@ -1310,8 +1312,6 @@ footer>p{
 
     .send input{
         width: 240px;
-        height: 40px;
-        border: none;
     }
 
     .bold{
@@ -1322,10 +1322,6 @@ footer>p{
         font-size: 0.8rem;
     }
 
-    .send button{
-        display: inline;
-    }
-
     .adress-child2 p:nth-child(2){
         padding: 2px 0;
     }
@@ -1334,10 +1330,6 @@ footer>p{
 @media screen and (max-width:320px){
     h2{
         font-size: 1.8rem;
-    }
-
-    #about .container{
-        width: 100%;
     }
 }
 
