@@ -1486,6 +1486,13 @@ footer>p{
     }
 }
 
+
+@media screen and (max-width:368px){
+    .modal h3{
+        font-size: 1.6rem;
+    }
+}
+
 @media screen and (max-width:320px){
     h2{
         font-size: 1.8rem;
