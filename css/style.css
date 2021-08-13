@@ -132,7 +132,7 @@ span{
     bottom: 30px;
     right: 30px;
     background-color: var(--primary-color);
-    padding: 18px 8px;
+    padding: 20px 8px;
     text-align: center;
     transition: background-color 0.3s ease, opacity 0.3s ease, 
     visibility 0.3s ease;
@@ -151,7 +151,7 @@ span{
 }
 
 .back-top img{
-    width: 65%;
+    width: 60%;
 }
 
 
@@ -282,6 +282,7 @@ nav .container{
     background-position: center center;
     background-repeat: no-repeat;
     height: 960px;
+    position: relative;
 }
 
 #hero .container{
@@ -302,7 +303,145 @@ nav .container{
     margin: 20px 0;
 }
 
+.circle{
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    width: 80px;
+    height: 80px;
+    background: #9900e0;
+    border: 1px solid white;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    animation: circleHero 5s ease-in-out infinite;
+    display: none;
+}
 
+@supports(mix-blend-mode: difference){
+    .circle{
+        display: block;
+    }
+}
+
+@keyframes circleHero{
+    0%{
+        top: 250px;
+        left: 250px;
+    }
+
+    30%{
+        top: 330px;
+        left: 450px;
+    }
+
+    60%{
+        top: 350px;
+        left: 270px;
+    }
+
+    100%{
+        top: 250px;
+        left: 250px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1440px){
+    @keyframes circleHero{
+        0%{
+            top: 250px;
+            left: 50px;
+        }
+    
+        30%{
+            top: 330px;
+            left: 250px;
+        }
+    
+        60%{
+            top: 350px;
+            left: 70px;
+        }
+    
+        100%{
+            top: 250px;
+            left: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    @keyframes circleHero{
+        0%{
+            top: 200px;
+            left: 550px;
+        }
+    
+        30%{
+            top: 240px;
+            left: 750px;
+        }
+    
+        60%{
+            top: 270px;
+            left: 650px;
+        }
+    
+        100%{
+            top: 200px;
+            left: 550px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    @keyframes circleHero{
+        0%{
+            top: 200px;
+            left: 350px;
+        }
+    
+        30%{
+            top: 240px;
+            left: 540px;
+        }
+    
+        60%{
+            top: 270px;
+            left: 450px;
+        }
+    
+        100%{
+            top: 200px;
+            left: 350px;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px){
+    @keyframes circleHero{
+        0%{
+            top: 150px;
+            left: 70px;
+        }
+    
+        30%{
+            top: 190px;
+            left: 220px;
+        }
+    
+        60%{
+            top: 220px;
+            left: 120px;
+        }
+    
+        100%{
+            top: 150px;
+            left: 70px;
+        }
+    }
+}
 
 
 
@@ -1272,6 +1411,21 @@ footer>p{
         width: 100%;
         border-radius: 0;
     }
+
+    #about p{
+        margin-right: 20px;
+    }
+
+    .modal{
+        height: 60vh;
+    }
+
+    #_courses p{
+        overflow: auto;
+        height: 80%;
+    }
+
+
 
     .img-wrap{
         flex-basis:100%;

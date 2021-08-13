@@ -12,7 +12,7 @@ $('.nav-links li').on('click', () => {
 })
 
 $(window).on('scroll', () => {
-    if ($(window).scrollTop()>200) {
+    if ($(window).scrollTop()>20) {
         $('nav').addClass('sticky')
         $('.logo-dark').show()
         $('.logo-light').hide()
@@ -34,15 +34,19 @@ const overlay = $('.overlay')
 const btnCloseModal = $('.close-modal')
 const btnsOpenModal = $('.img-wrap')
 
+const circle = $('.circle') 
+
 btnsOpenModal.on('click', function() {
     overlay.removeClass('hidden')
     const modal_type = $(this).data('course')
     $('#' + modal_type).removeClass('hidden')
+    circle.css('display', 'none')
 })
 
 function closeModal() {
     modal.addClass('hidden')
     overlay.addClass('hidden')
+    circle.css('display', 'block')
 }
 
 btnCloseModal.on('click', closeModal)
