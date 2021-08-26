@@ -26,7 +26,6 @@ $(window).on('scroll', () => {
 })
 
 
-
 // modals (pop-ups)
 
 const modal = $('.modal')
