@@ -309,8 +309,8 @@ nav .container{
     left: 300px;
     width: 80px;
     height: 80px;
-    background: #9900e0;
-    border: 1px solid white;
+    background: #fdff7a;
+    border: 1px solid #fbff00;
     mix-blend-mode: difference;
     border-radius: 50%;
     animation: circleHero 5s ease-in-out infinite;
